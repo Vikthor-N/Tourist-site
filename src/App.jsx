@@ -17,13 +17,13 @@ function App() {
   const getBackgroundClass = () => {
     switch (location.pathname) {
       case "/DESTINATION":
-        return "bg-destination bg-cover bg-center";
+        return "bg-destination md:bg-tablet-destination   sm:bg-mobile-destination  bg-cover bg-center";
       case "/CREW":
-        return "bg-crew bg-cover bg-center";
+        return "bg-crew md:bg-tablet-crew   sm:bg-mobile-crew  bg-cover bg-center";
       case "/TECHNOLOGY":
-        return "bg-technology bg-cover bg-center";
+        return "bg-technology md:bg-tablet-technology   sm:bg-mobile-technology  bg-cover bg-center";
       default:
-        return "bg-home bg-cover bg-center";
+        return "bg-home md:bg-tablet-home   sm:bg-mobile-home  bg-cover bg-center";
     }
   };
 
